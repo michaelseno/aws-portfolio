@@ -72,7 +72,8 @@
                 <p><strong>Highlights:</strong> 
                     <ul>
                         <li>GitHub Actions triggers unit tests on pull requests.</li>
-                        <li>Successful tests create an artifact in S3, deploy to Lambda, and trigger API tests.</li>
+                        <li>Once unit test is successful then the pull request can be merged</li>
+                        <li>Upon merge, github action workflow create an artifact in S3, deploy to Lambda, and trigger API tests.</li>
                         <li>EventBridge cron job triggers Lambda periodically with SNS notifications.</li>
                     </ul>
                 </p>
