@@ -1,92 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cloud Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        section {
-            padding: 50px;
-        }
-        .projects {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .project-card {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 10px;
-            width: 250px;
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Michael Seno — Test Automation Engineer. Playwright, Java/Python, CI/CD, AWS. Reliability-focused E2E tooling and cloud-native automation." />
+  <title>Michael Seno — Test Automation & Reliability Engineering</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>Welcome to My Cloud Portfolio</header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Software Test Automation Engineer transitioning into Cloud QA Automation.</p>
-    </section>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__name">Michael Seno</div>
+        <div class="brand__tagline">Test Automation • E2E Reliability • Cloud QA</div>
+      </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>AWS | Selenium | Python | CI/CD | Terraform</p>
-    </section>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project-card">
-                <h3>AWS Automated Testing</h3>
-                <p>Used Selenium & AWS Lambda to run automated UI tests.</p>
-            </div>
-            <div class="project-card">
-                <h3>CI/CD Pipeline</h3>
-                <p>Implemented an AWS CodePipeline for automated testing.</p>
-            </div>
-            <!-- New API Test Automation Project Section -->
-            <div class="project-card">
-                <h3>API Test Automation with CI/CD Pipeline</h3>
-                <p>Implemented an API testing framework that integrates GitHub Actions, AWS Lambda, and other AWS services.</p>
-                <p><strong>Highlights:</strong> 
-                    <ul>
-                        <li>GitHub Actions triggers unit tests on pull requests.</li>
-                        <li>Once unit test is successful then the pull request can be merged</li>
-                        <li>Upon merge, github action workflow create an artifact in S3, deploy to Lambda, and trigger API tests.</li>
-                        <li>EventBridge cron job triggers Lambda periodically with SNS notifications.</li>
-                    </ul>
-                </p>
-                <p>Check out the project on <a href="https://github.com/michaelseno/aws-lambda-api-test" target="_blank">GitHub</a></p>
-            </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>Building reliable E2E automation that ships.</h1>
+        <p>
+          I’m a Software Test Automation Engineer (10+ years) focused on scalable automation,
+          Playwright-based E2E reliability, and cloud-native execution.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="#contact">Get in Touch</a>
         </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: michaelseno@gmail.com</p>
-    </section>
-    
-    <footer>© 2025 My Cloud Portfolio</footer>
+
+        <div class="hero__badges">
+          <span class="badge">Playwright (Java/Python)</span>
+          <span class="badge">CI/CD</span>
+          <span class="badge">AWS</span>
+          <span class="badge">Test Strategy</span>
+        </div>
+      </div>
+
+      <div class="hero__panel" aria-label="Highlights panel">
+        <div class="panel">
+          <div class="panel__title">Featured</div>
+          <div class="panel__item">
+            <div class="panel__itemTitle">ReliabilityKit</div>
+            <div class="panel__itemDesc">Results.json + HTML report + CLI to reduce E2E debugging time.</div>
+          </div>
+          <div class="panel__item">
+            <div class="panel__itemTitle">TestOrbit (Pre-MVP)</div>
+            <div class="panel__itemDesc">Self-serve cloud testing platform (UI/API/Security/Perf).</div>
+          </div>
+          <div class="panel__item">
+            <div class="panel__itemTitle">AWS Lambda API Testing</div>
+            <div class="panel__itemDesc">CI/CD automation pipeline with AWS services + GitHub Actions.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p class="lead">
+        I build automation frameworks that teams can trust—fast feedback, stable execution,
+        and artifacts that make failures easy to diagnose.
+      </p>
+      <p>
+        I’m currently focusing on Playwright and reliability tooling (artifacts, reporting, flake reduction),
+        while continuing to build cloud-based automation products.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section--alt">
+    <div class="container">
+      <h2>Skills</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Automation</h3>
+          <ul>
+            <li>Playwright (Java/Python), Selenium</li>
+            <li>Test design, stability patterns, reliability tooling</li>
+            <li>Page Objects & component-based test architecture</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Engineering</h3>
+          <ul>
+            <li>Java (JUnit5), Python</li>
+            <li>Build & tooling: Maven, Git</li>
+            <li>Reporting & observability patterns</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Cloud & CI/CD</h3>
+          <ul>
+            <li>AWS (Lambda, S3, EventBridge, CloudWatch, SNS)</li>
+            <li>GitHub Actions, pipelines</li>
+            <li>Infrastructure-aware test execution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2>Projects</h2>
+        <p class="lead">Flagship work + practical automation systems built for real-world constraints.</p>
+      </div>
+
+      <div class="projects">
+        <!-- ReliabilityKit -->
+        <article class="project">
+          <div class="project__top">
+            <h3>ReliabilityKit (E2E Reliability Toolkit)</h3>
+            <span class="pill">Playwright • JUnit5 • Java • CLI</span>
+          </div>
+
+          <p>
+            A toolkit that makes E2E failures easier to debug by producing <strong>structured run results</strong>,
+            <strong>HTML reports</strong>, and a <strong>CLI</strong> to open the latest run instantly.
+          </p>
+
+          <div class="project__cols">
+            <div>
+              <h4>Problem</h4>
+              <ul>
+                <li>E2E failures are slow to triage (missing artifacts / noisy logs).</li>
+                <li>Teams lose time reproducing failures locally.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>What it does</h4>
+              <ul>
+                <li>Generates <code>results.json</code> and <code>report.html</code> per run</li>
+                <li>Captures screenshot + trace on failure</li>
+                <li>CLI: list runs, open latest report</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project__links">
+            <!-- TODO: update this link -->
+            <a class="link" href="https://github.com/michaelseno/e2e-reliability-toolkit" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a class="link" href="#contact">Request demo walkthrough</a>
+          </div>
+        </article>
+
+        <!-- TestOrbit -->
+        <article class="project">
+          <div class="project__top">
+            <h3>TestOrbit (Pre-MVP SaaS)</h3>
+            <span class="pill">AWS • React • Serverless/Containers • Automation</span>
+          </div>
+
+          <p>
+            A self-serve automation platform aimed at making testing accessible and infrastructure-free.
+  TestOrbit began as a serverless API testing framework and evolved into a full product
+  supporting UI, API, security, and performance testing.
+          </p>
+
+          <div class="project__cols">
+            <div>
+              <h4>Focus</h4>
+              <ul>
+                <li>Self-serve suite creation + execution</li>
+                <li>Evolved from AWS Lambda automation framework into SaaS platform</li>
+                <li>Scheduling + dashboard results</li>
+                <li>Designed for non-technical users long-term</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Status</h4>
+              <ul>
+                <li>Pre-MVP (active development)</li>
+                <li>UI + backend core features in place</li>
+                <li>Next: polish + beta testing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project__links">
+            <!-- If repo is private, replace with “Case Study (coming soon)” -->
+            <a class="link" href="https://github.com/michaelseno/testorbit-frontend" onclick="return false;">TestOrbit Frontend</a>
+            <a class="link" href="https://github.com/michaelseno/serverless-test-automation" onclick="return false;">TestOrbit Backend</a>
+            <a class="link" href="#" onclick="return false;">Case Study (coming soon)</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="lead">Want to chat about automation reliability or Playwright tooling?</p>
+
+      <div class="contact">
+        <div class="contact__card">
+          <div class="contact__label">Email</div>
+          <a class="contact__value" href="mailto:michaelseno@gmail.com">michaelseno@gmail.com</a>
+        </div>
+
+        <div class="contact__card">
+          <div class="contact__label">GitHub</div>
+          <a class="contact__value" href="https://github.com/michaelseno" target="_blank" rel="noreferrer">github.com/michaelseno</a>
+        </div>
+
+        <div class="contact__card">
+          <div class="contact__label">LinkedIn</div>
+          <!-- Put your LinkedIn URL -->
+          <a class="contact__value" href="https://linkedin.com/in/michaelseno" onclick="return false;">linkedin.com/in/michaelseno</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Michael Seno</span>
+      <span class="footer__sep">•</span>
+      <span>Built with static HTML/CSS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
