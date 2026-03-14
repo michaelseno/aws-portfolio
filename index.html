@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Michael Seno — Test Automation Engineer. Playwright, Java/Python, CI/CD, AWS. Reliability-focused E2E tooling and cloud-native automation." />
-  <title>Michael Seno — Test Automation & Reliability Engineering</title>
+  <meta name="description" content="Michael Seno — Cloud-Native Quality and Reliability Engineer. Building test orchestration and reliability platforms with Playwright, Python, AWS, and CI/CD." />
+  <title>Michael Seno — Cloud-Native Quality & Reliability Engineering</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="container topbar__inner">
       <div class="brand">
         <div class="brand__name">Michael Seno</div>
-        <div class="brand__tagline">Test Automation • E2E Reliability • Cloud QA</div>
+        <div class="brand__tagline">Cloud-Native Quality • Reliability Engineering • SDET</div>
       </div>
 
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -22,7 +22,7 @@
 
       <nav class="nav">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#approach">Approach</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -33,22 +33,24 @@
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__copy">
-        <h1>Building reliable E2E automation that ships.</h1>
+        <h1>I build cloud-native quality systems that ship with confidence.</h1>
         <p>
-          I’m a Software Test Automation Engineer (10+ years) focused on scalable automation,
-          Playwright-based E2E reliability, and cloud-native execution.
+          I design and implement automation platforms where execution, diagnostics, and
+          reliability signals are first-class outputs. My focus is practical architecture,
+          reliable delivery, and measurable quality outcomes.
         </p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#projects">View Projects</a>
-          <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+          <a class="btn btn--primary" href="#projects">Explore Flagship Projects</a>
+          <a class="btn btn--ghost" href="#contact">Discuss Role or Consulting</a>
         </div>
 
         <div class="hero__badges">
-          <span class="badge">Playwright (Java/Python)</span>
+          <span class="badge">Playwright + pytest</span>
+          <span class="badge">Serverless + Containers</span>
           <span class="badge">CI/CD</span>
           <span class="badge">AWS</span>
-          <span class="badge">Test Strategy</span>
+          <span class="badge">Reliability Analytics</span>
         </div>
       </div>
 
@@ -56,16 +58,16 @@
         <div class="panel">
           <div class="panel__title">Featured</div>
           <div class="panel__item">
-            <div class="panel__itemTitle">ReliabilityKit</div>
-            <div class="panel__itemDesc">Results.json + HTML report + CLI to reduce E2E debugging time.</div>
+            <div class="panel__itemTitle">ReliabilityKit (MVP)</div>
+            <div class="panel__itemDesc">Structured run intelligence, trend analytics, and hosted reliability dashboard.</div>
           </div>
           <div class="panel__item">
-            <div class="panel__itemTitle">TestOrbit (Pre-MVP)</div>
-            <div class="panel__itemDesc">Self-serve cloud testing platform (UI/API/Security/Perf).</div>
+            <div class="panel__itemTitle">TestOrbit (Technical POC)</div>
+            <div class="panel__itemDesc">Cloud-native orchestration for API/UI/Perf/Security test execution.</div>
           </div>
           <div class="panel__item">
-            <div class="panel__itemTitle">AWS Lambda API Testing</div>
-            <div class="panel__itemDesc">CI/CD automation pipeline with AWS services + GitHub Actions.</div>
+            <div class="panel__itemTitle">Dual Focus</div>
+            <div class="panel__itemDesc">Open to full-time engineering roles and freelance reliability consulting.</div>
           </div>
         </div>
       </div>
@@ -76,14 +78,42 @@
   <section id="about" class="section">
     <div class="container">
       <h2>About</h2>
-      <p class="lead">
-        I build automation frameworks that teams can trust—fast feedback, stable execution,
-        and artifacts that make failures easy to diagnose.
-      </p>
-      <p>
-        I’m currently focusing on Playwright and reliability tooling (artifacts, reporting, flake reduction),
-        while continuing to build cloud-based automation products.
-      </p>
+      <p class="lead">I build test and reliability platforms, not just test scripts.</p>
+      <p>I specialize in cloud-aware automation architecture, execution reliability, and debuggable reporting systems. My current flagship work combines SDET depth with practical cloud system design through TestOrbit and ReliabilityKit.</p>
+    </div>
+  </section>
+
+  <!-- Engineering Approach -->
+  <section id="approach" class="section section--alt">
+    <div class="container">
+      <h2>Engineering Approach</h2>
+      <p class="lead">My architecture decisions optimize for diagnosability, deterministic execution, and maintainable delivery as systems scale.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Execution First</h3>
+          <ul>
+            <li>Design around stable, repeatable test execution paths</li>
+            <li>Separate control-plane and execution-plane concerns</li>
+            <li>Use scheduling/webhooks/manual triggers consistently</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Reliability Signals</h3>
+          <ul>
+            <li>Capture structured run records and artifacts by default</li>
+            <li>Classify failures to reduce triage time</li>
+            <li>Track trend and reliability scores over time</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Production Discipline</h3>
+          <ul>
+            <li>CI gates and scheduled runs for continuous confidence</li>
+            <li>Cloud-native deployment patterns with practical tradeoffs</li>
+            <li>Honest roadmap: POC/MVP status with measurable progress</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -128,85 +158,95 @@
     <div class="container">
       <div class="section__header">
         <h2>Projects</h2>
-        <p class="lead">Flagship work + practical automation systems built for real-world constraints.</p>
+       <p class="lead">Two flagship systems that showcase cloud architecture depth and reliability-focused SDET execution.</p>
       </div>
 
       <div class="projects">
         <!-- ReliabilityKit -->
         <article class="project">
           <div class="project__top">
-            <h3>ReliabilityKit (E2E Reliability Toolkit)</h3>
-            <span class="pill">Playwright • JUnit5 • Java • CLI</span>
+            <h3>ReliabilityKit (MVP Reliability Toolkit)</h3>
+            <span class="pill">Python • Playwright • pytest • CLI • AWS</span>
           </div>
 
           <p>
-            A toolkit that makes E2E failures easier to debug by producing <strong>structured run results</strong>,
-            <strong>HTML reports</strong>, and a <strong>CLI</strong> to open the latest run instantly.
+            ReliabilityKit is a local-first reliability execution layer for pytest + Playwright that emits
+            <strong>structured run records</strong>, <strong>failure classifications</strong>, and
+            <strong>dashboard-grade analytics</strong> for faster triage.
           </p>
 
           <div class="project__cols">
             <div>
               <h4>Problem</h4>
               <ul>
-                <li>E2E failures are slow to triage (missing artifacts / noisy logs).</li>
-                <li>Teams lose time reproducing failures locally.</li>
+                <li>Flaky and failed E2E tests are expensive to diagnose without structure.</li>
+                <li>Teams need trend context, not only per-run screenshots and logs.</li>
               </ul>
             </div>
             <div>
-              <h4>What it does</h4>
+              <h4>Architecture and output</h4>
               <ul>
-                <li>Generates <code>results.json</code> and <code>report.html</code> per run</li>
-                <li>Captures screenshot + trace on failure</li>
-                <li>CLI: list runs, open latest report</li>
+                <li>CLI-first execution + pytest plugin runtime capture</li>
+                <li>Failure digesting, classification, reliability scoring, and trends</li>
+                <li>Scheduled CI + hosted reliability dashboard on AWS S3</li>
               </ul>
             </div>
           </div>
 
+          <div class="project__evidence">
+            <span class="evidence">Status: MVP (active)</span>
+            <span class="evidence">Proof: Live dashboard + CI badges + tests</span>
+          </div>
+
           <div class="project__links">
-            <!-- TODO: update this link -->
-            <a class="link" href="https://github.com/michaelseno/e2e-reliability-toolkit" target="_blank" rel="noreferrer">GitHub Repo</a>
-            <a class="link" href="#contact">Request demo walkthrough</a>
+            <a class="link" href="https://github.com/michaelseno/python-reliability-toolkit" target="_blank" rel="noreferrer">Toolkit Repo</a>
+            <a class="link" href="https://rk-reliability.s3.amazonaws.com/dashboard.html" target="_blank" rel="noreferrer">Live Reliability Dashboard</a>
+            <a class="link" href="#contact">Discuss reliability consulting</a>
           </div>
         </article>
 
         <!-- TestOrbit -->
         <article class="project">
           <div class="project__top">
-            <h3>TestOrbit (Pre-MVP SaaS)</h3>
-            <span class="pill">AWS • React • Serverless/Containers • Automation</span>
+            <h3>TestOrbit (Technical POC)</h3>
+            <span class="pill">AWS • React • Serverless • Fargate • Automation</span>
           </div>
 
           <p>
-            A self-serve automation platform aimed at making testing accessible and infrastructure-free.
-  TestOrbit began as a serverless API testing framework and evolved into a full product
-  supporting UI, API, security, and performance testing.
+            TestOrbit is a technical POC for cloud-native test orchestration. It combines a
+            serverless control plane with containerized execution workers to support API, UI,
+            performance, and security testing workflows.
           </p>
 
           <div class="project__cols">
             <div>
-              <h4>Focus</h4>
+              <h4>Architecture focus</h4>
               <ul>
-                <li>Self-serve suite creation + execution</li>
-                <li>Evolved from AWS Lambda automation framework into SaaS platform</li>
-                <li>Scheduling + dashboard results</li>
-                <li>Designed for non-technical users long-term</li>
+                <li>Serverless API control plane for suite and run lifecycle</li>
+                <li>Fargate execution workers for scalable test runtime isolation</li>
+                <li>Manual, webhook, and scheduled execution paths</li>
+                <li>Credits/results/report retrieval workflow</li>
               </ul>
             </div>
             <div>
               <h4>Status</h4>
               <ul>
-                <li>Pre-MVP (active development)</li>
-                <li>UI + backend core features in place</li>
-                <li>Next: polish + beta testing</li>
+                <li>Technical POC with production-oriented patterns</li>
+                <li>Core frontend/backend flows implemented</li>
+                <li>Next: hardening, docs, and architecture case study expansion</li>
               </ul>
             </div>
           </div>
 
+          <div class="project__evidence">
+            <span class="evidence">Status: Technical POC</span>
+            <span class="evidence">Proof: Live frontend + backend architecture</span>
+          </div>
+
           <div class="project__links">
-            <!-- If repo is private, replace with “Case Study (coming soon)” -->
-            <a class="link" href="https://github.com/michaelseno/testorbit-frontend" onclick="return false;">TestOrbit Frontend</a>
-            <a class="link" href="https://github.com/michaelseno/serverless-test-automation" onclick="return false;">TestOrbit Backend</a>
-            <a class="link" href="#" onclick="return false;">Case Study (coming soon)</a>
+            <a class="link" href="https://d35l48aa0loqlr.cloudfront.net/" target="_blank" rel="noreferrer">Live Frontend Demo</a>
+            <a class="link" href="https://github.com/michaelseno/testorbit-frontend" target="_blank" rel="noreferrer">Frontend Repo</a>
+            <a class="link" href="https://github.com/michaelseno/serverless-test-automation" target="_blank" rel="noreferrer">Backend Repo</a>
           </div>
         </article>
       </div>
@@ -217,7 +257,11 @@
   <section id="contact" class="section section--alt">
     <div class="container">
       <h2>Contact</h2>
-      <p class="lead">Want to chat about automation reliability or Playwright tooling?</p>
+      <p class="lead">Open to full-time roles and freelance consulting in cloud-native test architecture and reliability engineering.</p>
+
+      <div class="contact__banner">
+        <strong>Looking for:</strong> SDET / QA Platform Engineering roles • Reliability consulting engagements • Technical architecture reviews
+      </div>
 
       <div class="contact">
         <div class="contact__card">
@@ -232,8 +276,7 @@
 
         <div class="contact__card">
           <div class="contact__label">LinkedIn</div>
-          <!-- Put your LinkedIn URL -->
-          <a class="contact__value" href="https://linkedin.com/in/michaelseno" onclick="return false;">linkedin.com/in/michaelseno</a>
+          <a class="contact__value" href="https://linkedin.com/in/michaelseno" target="_blank" rel="noreferrer">linkedin.com/in/michaelseno</a>
         </div>
       </div>
     </div>
