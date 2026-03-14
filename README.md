@@ -2,6 +2,13 @@
 
 A lightweight static portfolio site showcasing my automation and cloud projects.
 
+## Narrative planning
+- `PORTFOLIO_NARRATIVE_PLAN.md` – strategic messaging plan for positioning around TestOrbit (technical POC) and ReliabilityKit (MVP).
+
+## Live project demos referenced
+- TestOrbit frontend: `https://d35l48aa0loqlr.cloudfront.net/`
+- ReliabilityKit dashboard: `https://rk-reliability.s3.amazonaws.com/dashboard.html`
+
 ## Edit
 - `index.html` – content
 - `style.css` – styling
