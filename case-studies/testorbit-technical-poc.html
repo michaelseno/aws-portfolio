@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TestOrbit technical case study: cloud-native orchestration architecture for automated testing." />
+  <title>TestOrbit Case Study — Technical POC</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__name">TestOrbit Case Study</div>
+        <div class="brand__tagline">Technical POC • Cloud-Native Test Orchestration</div>
+      </div>
+      <nav class="nav nav--open" style="position:static;display:flex;background:transparent;border:0;padding:0;width:auto;">
+        <a href="../index.html#projects">Back to Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1>TestOrbit — Technical POC</h1>
+      <p class="lead">
+        TestOrbit is a cloud-native test orchestration platform POC designed to run API, UI,
+        performance, and security suites through a serverless control plane and containerized workers.
+      </p>
+
+      <div class="case-grid">
+        <article class="case-section">
+          <h3>Problem</h3>
+          <ul class="case-list">
+            <li>Teams need one workflow for manual, webhook, and scheduled test execution.</li>
+            <li>Execution should be isolated and scalable without managing permanent runner infrastructure.</li>
+            <li>Results and artifacts must be retrievable in a dashboard-friendly model.</li>
+          </ul>
+        </article>
+
+        <article class="case-section">
+          <h3>Architecture</h3>
+          <ul class="case-list">
+            <li>Control plane: API Gateway + Lambda handlers for suite, schedule, and run lifecycle.</li>
+            <li>Execution plane: ECS Fargate tasks launched per suite run.</li>
+            <li>Persistence: DynamoDB for suites, schedules, runs, and credit transactions.</li>
+            <li>Artifacts/reports: S3-backed report retrieval and result drill-down APIs.</li>
+          </ul>
+        </article>
+
+        <article class="case-section">
+          <h3>Execution Flows</h3>
+          <ul class="case-list">
+            <li>Manual run: dashboard action triggers suite run and worker task dispatch.</li>
+            <li>Webhook run: tokenized route dispatches execution for CI/CD integrations.</li>
+            <li>Scheduled run: EventBridge scheduler triggers periodic suite execution.</li>
+            <li>Result retrieval: summary and detail endpoints expose run status and outcomes.</li>
+          </ul>
+        </article>
+
+        <article class="case-section">
+          <h3>Status and Next Steps</h3>
+          <ul class="case-list">
+            <li>Status: Technical POC with production-oriented architecture patterns.</li>
+            <li>Implemented: core suite CRUD, run triggers, schedules, credits, reporting surfaces.</li>
+            <li>Next: transaction hardening, deeper observability, and deployment promotion workflow.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="evidence-row">
+        <a class="link" href="https://d35l48aa0loqlr.cloudfront.net/" target="_blank" rel="noreferrer">Live Frontend</a>
+        <a class="link" href="https://github.com/michaelseno/testorbit-frontend" target="_blank" rel="noreferrer">Frontend Repo</a>
+        <a class="link" href="https://github.com/michaelseno/serverless-test-automation" target="_blank" rel="noreferrer">Backend Repo</a>
+      </div>
+
+      <a class="back-link" href="../index.html#projects">← Back to portfolio projects</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>Michael Seno</span>
+      <span class="footer__sep">•</span>
+      <span>Cloud-Native Quality and Reliability Engineering</span>
+    </div>
+  </footer>
+</body>
+</html>

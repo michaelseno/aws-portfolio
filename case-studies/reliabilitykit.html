@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ReliabilityKit case study: local-first reliability execution layer for pytest and Playwright." />
+  <title>ReliabilityKit Case Study — MVP</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__name">ReliabilityKit Case Study</div>
+        <div class="brand__tagline">MVP • Reliability Execution Toolkit</div>
+      </div>
+      <nav class="nav nav--open" style="position:static;display:flex;background:transparent;border:0;padding:0;width:auto;">
+        <a href="../index.html#projects">Back to Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1>ReliabilityKit — MVP Case Study</h1>
+      <p class="lead">
+        ReliabilityKit is a local-first reliability execution layer that wraps pytest + Playwright runs
+        and converts each run into structured reliability data for faster triage and trend analysis.
+      </p>
+
+      <div class="case-grid">
+        <article class="case-section">
+          <h3>Problem</h3>
+          <ul class="case-list">
+            <li>Failed E2E runs are often noisy and hard to compare historically.</li>
+            <li>Teams need deterministic chaos runs and repeatable diagnostics.</li>
+            <li>Per-run reports alone do not expose reliability drift over time.</li>
+          </ul>
+        </article>
+
+        <article class="case-section">
+          <h3>System Design</h3>
+          <ul class="case-list">
+            <li>CLI-first execution with Typer commands for run, inspect, report, trend, and dashboard.</li>
+            <li>Pytest plugin captures runtime records, artifacts, chaos events, and failure digests.</li>
+            <li>Local-first storage under `.reliabilitykit/` with S3 backend architecture staged.</li>
+            <li>HTML dashboard unifies latest-run triage and historical reliability views.</li>
+          </ul>
+        </article>
+
+        <article class="case-section">
+          <h3>Reliability Signals</h3>
+          <ul class="case-list">
+            <li>Run reliability score and test reliability score.</li>
+            <li>Flake rate, chaos sensitivity, and failure diversity.</li>
+            <li>Failure cluster aggregation using digest fingerprints.</li>
+            <li>Scheduled CI to maintain continuous signal freshness.</li>
+          </ul>
+        </article>
+
+        <article class="case-section">
+          <h3>Status and Roadmap</h3>
+          <ul class="case-list">
+            <li>Status: MVP complete and actively evolving.</li>
+            <li>Implemented: unit tests, e2e suites, golden checks, architecture guardrails, scheduled CI.</li>
+            <li>Next: production-grade S3 backend and deeper trend analytics.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="evidence-row">
+        <a class="link" href="https://github.com/michaelseno/python-reliability-toolkit" target="_blank" rel="noreferrer">Toolkit Repo</a>
+        <a class="link" href="https://rk-reliability.s3.amazonaws.com/dashboard.html" target="_blank" rel="noreferrer">Live Dashboard</a>
+      </div>
+
+      <a class="back-link" href="../index.html#projects">← Back to portfolio projects</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>Michael Seno</span>
+      <span class="footer__sep">•</span>
+      <span>Cloud-Native Quality and Reliability Engineering</span>
+    </div>
+  </footer>
+</body>
+</html>
