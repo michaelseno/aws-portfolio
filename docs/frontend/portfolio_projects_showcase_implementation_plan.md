@@ -18,6 +18,9 @@ Refresh the static homepage so it presents exactly three featured projects — C
 - `index.html`
 - `style.css`
 - `script.js`
+- `case-studies/cashflow-tracker.html`
+- `case-studies/testorbit-frontend-repository-proof.html`
+- `case-studies/testorbit-backend-repository-proof.html`
 - `case-studies/testorbit-technical-poc.html`
 - `docs/frontend/portfolio_projects_showcase_implementation_plan.md`
 - `docs/frontend/portfolio_projects_showcase_implementation_report.md`
@@ -31,7 +34,7 @@ Refresh the static homepage so it presents exactly three featured projects — C
 ## 6. Assumptions
 - No new local screenshots are required for this phase; content-first cards are acceptable.
 - Existing ReliabilityKit and TestOrbit case-study pages remain valid proof paths.
-- CashFlow Tracker will be represented through repo-backed product copy only for now.
+- Private or non-public-safe repos may be represented through portfolio-hosted proof pages derived from local repo inspection.
 
 ## 7. Validation Plan
 - Run a static validation script to confirm required sections, anchors, and exactly three featured project cards exist.
