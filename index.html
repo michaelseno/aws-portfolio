@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Michael Seno — Cloud-Native Quality and Reliability Engineer. Building test orchestration and reliability platforms with Playwright, Python, AWS, and CI/CD." />
-  <title>Michael Seno — Cloud-Native Quality & Reliability Engineering</title>
+  <meta name="description" content="Michael Seno — product-minded frontend and cloud engineer showcasing offline-first mobile, reliability tooling, and cloud-native orchestration projects." />
+  <title>Michael Seno — Product, Frontend & Cloud Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="container topbar__inner">
       <div class="brand">
         <div class="brand__name">Michael Seno</div>
-        <div class="brand__tagline">Cloud-Native Quality • Reliability Engineering • SDET</div>
+        <div class="brand__tagline">Product-Minded Frontend • Cloud-Native Systems • Reliability Engineering</div>
       </div>
 
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -21,9 +21,9 @@
       </button>
 
       <nav class="nav">
+        <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#approach">Approach</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -33,84 +33,230 @@
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__copy">
-        <h1>I build cloud-native quality systems that ship with confidence.</h1>
-        <p>
-          I design and implement automation platforms where execution data, diagnostics,
-          and reliability signals are first-class outputs. I focus on practical architecture,
-          dependable delivery, and measurable quality outcomes.
-        </p>
+          <div class="hero__eyebrow">Product-minded engineer • cloud-native builder</div>
+          <h1>I build polished product experiences, reliability tooling, and cloud-native systems.</h1>
+          <p>
+            This portfolio highlights three proof-backed builds across offline-first mobile UX,
+            test reliability analytics, and serverless orchestration. The goal is clear product
+            framing, honest scope, and visible engineering depth without extra complexity.
+          </p>
 
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="#projects">Explore Flagship Projects</a>
-          <a class="btn btn--ghost" href="#contact">Open to Roles and Consulting</a>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View Featured Projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+          </div>
+
+          <div class="hero__badges">
+            <span class="badge">React Native + React</span>
+            <span class="badge">Python + Playwright + pytest</span>
+            <span class="badge">AWS</span>
+            <span class="badge">Offline-first UX</span>
+            <span class="badge">Serverless orchestration</span>
+            <span class="badge">Reliability analytics</span>
+          </div>
         </div>
 
-        <div class="hero__badges">
-          <span class="badge">Playwright + pytest</span>
-          <span class="badge">Serverless + Containers</span>
-          <span class="badge">CI/CD</span>
-          <span class="badge">AWS</span>
-          <span class="badge">Reliability Analytics</span>
+        <div class="hero__panel" aria-label="Featured project snapshot">
+          <div class="panel">
+            <div class="panel__title">Portfolio snapshot</div>
+            <div class="panel__item">
+              <div class="panel__itemMeta">Offline-first mobile app</div>
+              <div class="panel__itemTitle">CashFlow Tracker</div>
+              <div class="panel__itemDesc">Personal finance workflow built for onboarding, budgeting visibility, and recurring money movement without network dependence.</div>
+            </div>
+            <div class="panel__item">
+              <div class="panel__itemMeta">MVP reliability toolkit</div>
+              <div class="panel__itemTitle">ReliabilityKit</div>
+              <div class="panel__itemDesc">Turns Python, Playwright, and pytest runs into structured diagnostics, artifacts, and trend analysis with hosted dashboard proof.</div>
+            </div>
+            <div class="panel__item">
+              <div class="panel__itemMeta">Technical POC</div>
+              <div class="panel__itemTitle">TestOrbit</div>
+              <div class="panel__itemDesc">Frontend and backend proof for a self-serve test orchestration control plane with suites, runs, scheduling, and execution triggers.</div>
+            </div>
+          </div>
         </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section section--projects">
+    <div class="container">
+      <div class="section__header">
+        <h2>Featured Projects</h2>
+        <p class="lead">A curated set of three builds that show product UX, reliability diagnostics, and cloud-native orchestration with public proof paths.</p>
       </div>
 
-      <div class="hero__panel" aria-label="Highlights panel">
-        <div class="panel">
-          <div class="panel__title">Featured</div>
-          <div class="panel__item">
-            <div class="panel__itemTitle">ReliabilityKit (MVP)</div>
-            <div class="panel__itemDesc">Structured run intelligence, trend analytics, and hosted reliability dashboard.</div>
+      <div class="projects">
+        <!-- CashFlow Tracker -->
+        <article class="project">
+          <div class="project__header">
+            <h3>CashFlow Tracker</h3>
+            <div class="project__labels">
+              <span class="pill">TestFlight beta</span>
+              <span class="project__category">Product / personal finance UX</span>
+            </div>
           </div>
-          <div class="panel__item">
-            <div class="panel__itemTitle">TestOrbit (Technical POC)</div>
-            <div class="panel__itemDesc">Cloud-native orchestration for API/UI/Perf/Security test execution.</div>
+
+          <p class="project__summary">A private-beta personal finance app for everyday budgeting, cash visibility, and recurring money workflows that still run locally on device.</p>
+
+          <div class="project__cols">
+            <div>
+              <h4>Problem</h4>
+              <p>Many budgeting tools feel cumbersome or too dependent on connectivity when the real need is quick, low-friction money tracking throughout the day.</p>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <p>A React Native workflow backed by local SQLite storage that keeps onboarding, dashboard views, recurring flows, savings tracking, transaction history, and account management usable without backend dependence.</p>
+            </div>
           </div>
-          <div class="panel__item">
-            <div class="panel__itemTitle">Dual Focus</div>
-            <div class="panel__itemDesc">Open to full-time engineering roles and freelance reliability consulting.</div>
+
+          <div class="project__highlights">
+            <h4>Key highlights</h4>
+            <ul>
+              <li>Onboarding captures accounts, recurring income, bills, and savings goals before dashboard use.</li>
+              <li>Dashboard supports projected vs. actual spend, savings progress, quick actions, and transaction history.</li>
+              <li>Recurring bill, salary, savings, and account workflows stay local-first rather than cloud-dependent.</li>
+            </ul>
           </div>
-        </div>
+
+          <div class="project__statusNote">
+            Current status: private-beta / TestFlight product with offline mobile execution today; the optional backend remains future-facing and is not required for the app experience. Public proof is limited, so shipped proof stays portfolio-safe and documentation-based.
+          </div>
+
+          <div class="project__links">
+            <a class="link" href="case-studies/cashflow-tracker.html">Read CashFlow Tracker beta proof page</a>
+            <a class="link" href="#contact">Request CashFlow Tracker beta walkthrough</a>
+          </div>
+        </article>
+
+        <!-- ReliabilityKit -->
+        <article class="project">
+          <div class="project__header">
+            <h3>ReliabilityKit</h3>
+            <div class="project__labels">
+              <span class="pill">MVP</span>
+              <span class="project__category">Reliability toolkit / Python + Playwright + pytest</span>
+            </div>
+          </div>
+
+          <p class="project__summary">A reliability toolkit that turns Python, Playwright, and pytest runs into structured diagnostics, artifacts, failure classifications, and trend-friendly reporting.</p>
+
+          <div class="project__cols">
+            <div>
+              <h4>Problem</h4>
+              <p>Flaky or failed test runs are expensive to triage when execution details are fragmented across logs, screenshots, and ad hoc reporting.</p>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <p>A local-first execution layer that captures structured run records and artifacts, classifies failures, computes reliability scoring, and surfaces trend analysis through a hosted dashboard proof path.</p>
+            </div>
+          </div>
+
+          <div class="project__highlights">
+            <h4>Key highlights</h4>
+            <ul>
+              <li>CLI-first execution with local run records and artifacts written to `.reliabilitykit/`.</li>
+              <li>Failure classification, reliability scoring, and dashboard-oriented trend analysis support faster debugging.</li>
+              <li>PR CI, scheduled CI, and dashboard workflows provide visible proof of active MVP evolution.</li>
+            </ul>
+          </div>
+
+          <div class="project__statusNote">
+            Current status: active MVP with local-first execution and AWS-hosted dashboard proof; the S3 persistence path is scaffolded rather than presented as fully finalized.
+          </div>
+
+          <div class="project__links">
+            <a class="link" href="https://github.com/michaelseno/python-reliability-toolkit" target="_blank" rel="noreferrer noopener">View ReliabilityKit repository</a>
+            <a class="link" href="https://rk-reliability.s3.amazonaws.com/dashboard.html" target="_blank" rel="noreferrer noopener">Open live dashboard</a>
+            <a class="link" href="case-studies/reliabilitykit.html">Read ReliabilityKit case study</a>
+          </div>
+        </article>
+
+        <!-- TestOrbit -->
+        <article class="project">
+          <div class="project__header">
+            <h3>TestOrbit</h3>
+            <div class="project__labels">
+              <span class="pill">Technical POC</span>
+              <span class="project__category">Cloud-native orchestration / frontend + backend proof</span>
+            </div>
+          </div>
+
+          <p class="project__summary">A self-serve test orchestration concept that combines a dashboard experience with serverless backend flows for suites, runs, scheduling, credits, and trigger-based execution.</p>
+
+          <div class="project__cols">
+            <div>
+              <h4>Problem</h4>
+              <p>Coordinating different test types and run triggers is difficult without a clear control plane, isolated execution model, and understandable operator workflow.</p>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <p>TestOrbit pairs a React frontend with a serverless orchestration backend so manual, scheduled, and webhook-triggered runs can move through suite management, credits, and execution flows as one product story.</p>
+            </div>
+          </div>
+
+          <div class="project__highlights">
+            <h4>Key highlights</h4>
+            <ul>
+              <li>Frontend includes the marketing site and authenticated dashboard for suites, runs, scheduling, credits, and webhook triggers.</li>
+              <li>Backend uses serverless control flows with AWS services and isolated runtime workers for execution handling.</li>
+              <li>Presented as one technical POC with separate frontend and backend proof links rather than two standalone portfolio entries.</li>
+            </ul>
+          </div>
+
+          <div class="project__statusNote">
+            Current status: technical POC with production-oriented patterns and public proof assets, but not framed as a launched SaaS product.
+          </div>
+
+          <div class="project__links">
+            <a class="link" href="https://d35l48aa0loqlr.cloudfront.net/" target="_blank" rel="noreferrer noopener">Open deployed TestOrbit hero page</a>
+            <a class="link" href="case-studies/testorbit-frontend-repository-proof.html">View TestOrbit frontend repository proof</a>
+            <a class="link" href="case-studies/testorbit-backend-repository-proof.html">View TestOrbit backend repository proof</a>
+            <a class="link" href="case-studies/testorbit-technical-poc.html">Read TestOrbit case study</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="section">
+  <section id="about" class="section section--alt">
     <div class="container">
       <h2>About</h2>
-      <p class="lead">I build test and reliability platforms, not just test scripts.</p>
-      <p>I specialize in cloud-aware automation architecture, reliability execution patterns, and debuggable reporting systems. My flagship work blends deep SDET practice with practical cloud system design through TestOrbit and ReliabilityKit.</p>
+      <p class="lead">I design practical portfolio work at the intersection of product UX, frontend implementation, cloud delivery, and reliability-focused engineering.</p>
+      <p>The featured projects are intentionally broad: an offline-first mobile app, a reliability diagnostics toolkit, and a cloud-native orchestration POC. Together they show how I approach user workflows, maintainable technical systems, and honest scope framing.</p>
     </div>
   </section>
 
   <!-- Engineering Approach -->
-  <section id="approach" class="section section--alt">
+  <section id="approach" class="section">
     <div class="container">
-      <h2>Engineering Approach</h2>
-      <p class="lead">My architecture decisions optimize for diagnosability, deterministic execution, and maintainable delivery as systems scale.</p>
+      <h2>Approach</h2>
+      <p class="lead">I optimize for usable interfaces, observable systems, and delivery choices that stay credible as a project matures.</p>
       <div class="grid">
         <div class="card">
-          <h3>Execution First</h3>
+          <h3>Product clarity</h3>
           <ul>
-            <li>Design around stable, repeatable test execution paths</li>
-            <li>Separate control-plane and execution-plane concerns</li>
-            <li>Use scheduling/webhooks/manual triggers consistently</li>
+            <li>Design around the main workflow before adding extra surface area</li>
+            <li>Keep UI states readable, responsive, and easy to scan</li>
+            <li>Favor explicit proof over vague portfolio claims</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Reliability Signals</h3>
+          <h3>Execution discipline</h3>
           <ul>
-            <li>Capture structured run records and artifacts by default</li>
-            <li>Classify failures to reduce triage time</li>
-            <li>Track trend and reliability scores over time</li>
+            <li>Structure systems so runs, records, and artifacts are diagnosable</li>
+            <li>Separate control, execution, and reporting concerns where needed</li>
+            <li>Use the simplest architecture that still preserves maintainability</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Production Discipline</h3>
+          <h3>Cloud-aware delivery</h3>
           <ul>
-            <li>CI gates and scheduled runs for continuous confidence</li>
-            <li>Cloud-native deployment patterns with practical tradeoffs</li>
-            <li>Honest roadmap: POC/MVP status with measurable progress</li>
+            <li>Use AWS-hosted paths when they add clear proof or deployment value</li>
+            <li>Be explicit about POC vs. MVP vs. future-facing work</li>
+            <li>Keep handoff quality high with visible, source-controlled artifacts</li>
           </ul>
         </div>
       </div>
@@ -124,171 +270,31 @@
 
       <div class="grid">
         <div class="card">
-          <h3>Automation</h3>
+          <h3>Frontend & Product</h3>
           <ul>
-            <li>Playwright + pytest across positive, negative, and edge scenarios</li>
-            <li>Stability patterns, failure diagnostics, and reliability tooling</li>
-            <li>POM and component-aware test architecture</li>
+            <li>React Native and React interfaces shaped around high-signal user flows</li>
+            <li>Content hierarchy, reusable card patterns, and responsive UI systems</li>
+            <li>Offline-first thinking for practical product usability</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Engineering</h3>
+          <h3>Automation & Reliability</h3>
           <ul>
-            <li>Python and Java with test-focused engineering workflows</li>
-            <li>Tooling discipline: Git, CI gates, and repeatable execution workflows</li>
-            <li>Structured reporting and reliability analytics models</li>
+            <li>Python, Playwright, and pytest execution workflows</li>
+            <li>Failure diagnostics, structured reporting, and reliability scoring</li>
+            <li>Repeatable quality gates for CI and scheduled runs</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Cloud & CI/CD</h3>
+          <h3>Cloud & Delivery</h3>
           <ul>
-            <li>AWS: Lambda, API Gateway, ECS/Fargate, S3, EventBridge, CloudWatch</li>
-            <li>GitHub Actions and scheduled reliability pipelines</li>
-            <li>Infrastructure-aware orchestration and result delivery</li>
+            <li>AWS services including Lambda, API Gateway, ECS/Fargate, S3, and EventBridge</li>
+            <li>Static-site and serverless deployment patterns that stay low-complexity</li>
+            <li>Architecture choices that balance proof, maintainability, and honest scope</li>
           </ul>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section__header">
-        <h2>Projects</h2>
-       <p class="lead">Two flagship systems that showcase cloud architecture depth and reliability-focused SDET execution.</p>
-      </div>
-
-      <div class="projects">
-        <!-- ReliabilityKit -->
-        <article class="project">
-          <div class="project__top">
-            <h3>ReliabilityKit (MVP Reliability Toolkit)</h3>
-            <span class="pill">Python • Playwright • pytest • CLI • AWS</span>
-          </div>
-
-          <p>
-            ReliabilityKit is a local-first reliability execution layer for pytest + Playwright that emits
-            <strong>structured run records</strong>, <strong>failure classifications</strong>, and
-            <strong>dashboard-grade analytics</strong> for faster triage.
-          </p>
-
-          <div class="project__cols">
-            <div>
-              <h4>Problem</h4>
-              <ul>
-                <li>Flaky and failed E2E tests are expensive to diagnose without structure.</li>
-                <li>Teams need trend context, not only per-run screenshots and logs.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Architecture and output</h4>
-              <ul>
-                <li>CLI-first execution + pytest plugin runtime capture</li>
-                <li>Failure digesting, classification, reliability scoring, and trends</li>
-                <li>Scheduled CI + hosted reliability dashboard on AWS S3</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project__cols project__cols--proof">
-            <div>
-              <h4>What exists today</h4>
-              <ul>
-                <li>Live dashboard with historical run analytics</li>
-                <li>Documented CLI workflows and seed strategy</li>
-                <li>Automated CI lanes for PR and scheduled reliability runs</li>
-              </ul>
-            </div>
-            <div>
-              <h4>What is intentionally next</h4>
-              <ul>
-                <li>Production-grade S3 backend implementation (currently scaffolded)</li>
-                <li>Expanded failure taxonomy and trend insight depth</li>
-                <li>Additional reliability scoring explainability in UI</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project__evidence">
-            <span class="evidence">Status: MVP (active)</span>
-            <span class="evidence">Proof: Live dashboard + CI badges + tests</span>
-          </div>
-
-          <div class="project__links">
-            <a class="link" href="https://github.com/michaelseno/python-reliability-toolkit" target="_blank" rel="noreferrer">Toolkit Repo</a>
-            <a class="link" href="https://rk-reliability.s3.amazonaws.com/dashboard.html" target="_blank" rel="noreferrer">Live Reliability Dashboard</a>
-            <a class="link" href="case-studies/reliabilitykit.html">Case Study</a>
-            <a class="link" href="#contact">Discuss reliability consulting</a>
-          </div>
-        </article>
-
-        <!-- TestOrbit -->
-        <article class="project">
-          <div class="project__top">
-            <h3>TestOrbit (Technical POC)</h3>
-            <span class="pill">AWS • React • Serverless • Fargate • Automation</span>
-          </div>
-
-          <p>
-            TestOrbit is a technical POC for cloud-native test orchestration. It combines a
-            serverless control plane with containerized execution workers to support API, UI,
-            performance, and security testing workflows.
-          </p>
-
-          <div class="project__cols">
-            <div>
-              <h4>Architecture focus</h4>
-              <ul>
-                <li>Serverless API control plane for suite and run lifecycle</li>
-                <li>Fargate execution workers for scalable test runtime isolation</li>
-                <li>Manual, webhook, and scheduled execution paths</li>
-                <li>Credits/results/report retrieval workflow</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Status</h4>
-              <ul>
-                <li>Technical POC with production-oriented patterns</li>
-                <li>Core frontend/backend flows implemented</li>
-                <li>Next: hardening, docs, and architecture case study expansion</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project__cols project__cols--proof">
-            <div>
-              <h4>What exists today</h4>
-              <ul>
-                <li>Live frontend with suite/run UX and scheduling surfaces</li>
-                <li>Serverless backend with containerized execution path</li>
-                <li>Credits/results/report workflows implemented for technical evaluation</li>
-              </ul>
-            </div>
-            <div>
-              <h4>What is intentionally next</h4>
-              <ul>
-                <li>Operational hardening for billing and scheduling consistency</li>
-                <li>Deeper observability and production runbook maturity</li>
-                <li>Broader contract alignment between frontend and backend docs</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project__evidence">
-            <span class="evidence">Status: Technical POC</span>
-            <span class="evidence">Proof: Live frontend + backend architecture</span>
-          </div>
-
-          <div class="project__links">
-            <a class="link" href="https://d35l48aa0loqlr.cloudfront.net/" target="_blank" rel="noreferrer">Live Frontend Demo</a>
-            <a class="link" href="https://github.com/michaelseno/testorbit-frontend" target="_blank" rel="noreferrer">Frontend Repo</a>
-            <a class="link" href="https://github.com/michaelseno/serverless-test-automation" target="_blank" rel="noreferrer">Backend Repo</a>
-            <a class="link" href="case-studies/testorbit-technical-poc.html">Case Study</a>
-          </div>
-        </article>
       </div>
     </div>
   </section>
@@ -296,22 +302,22 @@
   <section class="section">
     <div class="container">
       <h2>Engagement Model</h2>
-      <p class="lead">I support both long-term team impact and focused short-term delivery.</p>
+      <p class="lead">I support both long-term product engineering impact and focused delivery for teams improving frontend quality, reliability, or cloud workflows.</p>
       <div class="engagement-grid">
         <article class="card">
           <h3>Full-Time Roles</h3>
           <ul>
-            <li>SDET or QA Platform Engineering positions</li>
-            <li>Cloud-native automation architecture and reliability ownership</li>
-            <li>CI quality gates, test platform evolution, and engineering collaboration</li>
+            <li>Frontend, product-minded engineering, SDET, or QA platform roles</li>
+            <li>Cloud-native delivery, automation architecture, and reliability ownership</li>
+            <li>Cross-functional implementation with clear product and technical communication</li>
           </ul>
         </article>
         <article class="card">
           <h3>Freelance Consulting</h3>
           <ul>
-            <li>Reliability and flakiness diagnostics for existing test suites</li>
-            <li>Architecture reviews for test orchestration and reporting systems</li>
-            <li>Short, outcome-focused implementation sprints with handover docs</li>
+            <li>Reliability and flakiness diagnostics for existing automation suites</li>
+            <li>Frontend, orchestration, and reporting architecture reviews</li>
+            <li>Short implementation sprints with clear handoff documentation</li>
           </ul>
         </article>
       </div>
@@ -322,7 +328,7 @@
   <section id="contact" class="section section--alt">
     <div class="container">
       <h2>Contact</h2>
-      <p class="lead">Open to full-time engineering roles and freelance consulting in cloud-native test architecture and reliability engineering.</p>
+      <p class="lead">Open to full-time engineering roles and consulting across product-minded frontend work, cloud-native systems, and reliability-focused tooling.</p>
 
       <div class="contact__ctaRow">
         <a class="btn btn--primary" href="mailto:michaelseno@gmail.com?subject=Role%20Opportunity%20-%20Quality%20Engineering">Discuss Job Opportunities</a>
@@ -330,7 +336,7 @@
       </div>
 
       <div class="contact__banner">
-        <strong>Looking for:</strong> SDET / QA Platform Engineering roles • Reliability consulting engagements • Technical architecture reviews
+        <strong>Looking for:</strong> Frontend and product-minded engineering roles • QA platform or reliability engagements • Technical architecture reviews
       </div>
 
       <div class="contact">

@@ -51,7 +51,7 @@
   });
 
   // Active section hint on desktop nav
-  const sections = ["about", "approach", "projects", "contact"];
+  const sections = ["projects", "about", "approach", "contact"];
   const navLinks = sections
     .map((id) => document.querySelector(`.nav a[href="#${id}"]`))
     .filter(Boolean);
